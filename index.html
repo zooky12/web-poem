@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>per tu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="viewport">
+    <div id="track">
+
+      <!-- ── Screen 1 ── el cel s'estrellà en un banc de somriures -->
+      <section class="screen" data-index="0" aria-label="Vers 1">
+        <div class="s1-bg">
+          <div class="stars" id="stars"></div>
+          <div class="shooting-star" id="shooting-star"></div>
+          <div class="bench">
+            <!-- pixel bench via CSS box-shadow in ::after -->
+          </div>
+          <div class="settled-star" id="settled-star"></div>
+        </div>
+        <p class="verse" data-screen="0">el cel s'estrellà<br>en un banc de somriures</p>
+      </section>
+
+      <!-- ── Screen 2 ── les flors abraçaven amb la força del foc -->
+      <section class="screen" data-index="1" aria-label="Vers 2">
+        <div class="s2-bg">
+          <div class="flowers-container">
+            <div class="flower flower-1">
+              <svg class="flower-svg" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <!-- stem -->
+                <rect x="15" y="22" width="2" height="8" fill="#2d6a2d"/>
+                <!-- petals -->
+                <rect class="petal" x="14" y="8"  width="4" height="8" rx="2" fill="#ff6b00"/>
+                <rect class="petal" x="14" y="16" width="4" height="8" rx="2" fill="#ff8c00" style="transform-origin:16px 20px;transform:rotate(180deg)"/>
+                <rect class="petal" x="8"  y="14" width="8" height="4" rx="2" fill="#ff3a00"/>
+                <rect class="petal" x="16" y="14" width="8" height="4" rx="2" fill="#ffcc00" style="transform-origin:20px 16px;transform:rotate(180deg)"/>
+                <!-- center -->
+                <rect x="13" y="13" width="6" height="6" fill="#ffe066"/>
+              </svg>
+            </div>
+            <div class="flower flower-2">
+              <svg class="flower-svg" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <rect x="15" y="22" width="2" height="8" fill="#2d6a2d"/>
+                <rect class="petal" x="14" y="6"  width="4" height="10" rx="2" fill="#ff8c00"/>
+                <rect class="petal" x="14" y="16" width="4" height="10" rx="2" fill="#ff6b00" style="transform-origin:16px 21px;transform:rotate(180deg)"/>
+                <rect class="petal" x="6"  y="14" width="10" height="4" rx="2" fill="#ffcc00"/>
+                <rect class="petal" x="16" y="14" width="10" height="4" rx="2" fill="#ff3a00" style="transform-origin:21px 16px;transform:rotate(180deg)"/>
+                <rect class="petal" x="9"  y="9"  width="5" height="5" rx="2" fill="#ff6b00" style="transform-origin:11.5px 11.5px;transform:rotate(45deg)"/>
+                <rect class="petal" x="18" y="9"  width="5" height="5" rx="2" fill="#ff8c00" style="transform-origin:20.5px 11.5px;transform:rotate(-45deg)"/>
+                <rect class="petal" x="9"  y="18" width="5" height="5" rx="2" fill="#ffcc00" style="transform-origin:11.5px 20.5px;transform:rotate(-45deg)"/>
+                <rect class="petal" x="18" y="18" width="5" height="5" rx="2" fill="#ff3a00" style="transform-origin:20.5px 20.5px;transform:rotate(45deg)"/>
+                <rect x="13" y="13" width="6" height="6" fill="#ffe066"/>
+              </svg>
+            </div>
+            <div class="flower flower-3">
+              <svg class="flower-svg" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <rect x="15" y="22" width="2" height="8" fill="#2d6a2d"/>
+                <rect class="petal" x="14" y="8"  width="4" height="8" rx="2" fill="#ffcc00"/>
+                <rect class="petal" x="14" y="16" width="4" height="8" rx="2" fill="#ff8c00" style="transform-origin:16px 20px;transform:rotate(180deg)"/>
+                <rect class="petal" x="8"  y="14" width="8" height="4" rx="2" fill="#ff6b00"/>
+                <rect class="petal" x="16" y="14" width="8" height="4" rx="2" fill="#ff3a00" style="transform-origin:20px 16px;transform:rotate(180deg)"/>
+                <rect x="13" y="13" width="6" height="6" fill="#ffe066"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <p class="verse" data-screen="1">les flors abraçaven<br>amb la força del foc</p>
+      </section>
+
+      <!-- ── Screen 3 ── els nostres ulls es trobaren en una dansa de complicitat -->
+      <section class="screen" data-index="2" aria-label="Vers 3">
+        <div class="s3-bg">
+          <div class="sticker-pair">
+            <div class="sticker-wrap sticker-left" id="sticker-eye-left">
+              <img src="assets/sticker-eyes.png" alt="" class="pixel-img sticker-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="placeholder-asset">[ulls]</div>
+            </div>
+            <div class="sticker-wrap sticker-right" id="sticker-eye-right">
+              <img src="assets/sticker-eyes.png" alt="" class="pixel-img sticker-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="placeholder-asset">[ulls]</div>
+            </div>
+          </div>
+        </div>
+        <p class="verse" data-screen="2">els nostres ulls<br>es trobaren<br>en una dansa de complicitat</p>
+      </section>
+
+      <!-- ── Screen 4 ── rialles nascudes de boges tonteries -->
+      <section class="screen" data-index="3" aria-label="Vers 4">
+        <div class="s4-bg">
+          <div class="laugh-scene">
+            <div class="blah-mouth" id="blah-mouth">
+              <div class="mouth-pixel"></div>
+              <div class="bubble-container" id="bubble-container"></div>
+            </div>
+            <div class="laugh-face" id="laugh-face">
+              <div class="laugh-eyes"></div>
+              <div class="laugh-cheeks"></div>
+              <div class="laugh-mouth-open"></div>
+              <div class="laugh-stars" id="laugh-stars"></div>
+            </div>
+          </div>
+        </div>
+        <p class="verse" data-screen="3">rialles nascudes<br>de boges tonteries</p>
+      </section>
+
+      <!-- ── Screen 5 ── les paraules brollaren plenes de valors -->
+      <section class="screen" data-index="4" aria-label="Vers 5">
+        <div class="s5-bg">
+          <div class="mirror-scene mirror-scene-her">
+            <div class="figure figure-her">
+              <img src="assets/photo_ella.png" alt="" class="pixel-img figure-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="placeholder-asset placeholder-figure">[ella]</div>
+            </div>
+            <div class="mirror-frame mirror-frame-right">
+              <div class="mirror-glass"></div>
+            </div>
+          </div>
+          <div class="sparkles-container" id="sparkles-her"></div>
+        </div>
+        <p class="verse" data-screen="4">les paraules brollaren<br>plenes de valors</p>
+      </section>
+
+      <!-- ── Screen 6 ── i els valors brotaren al cor que escoltava -->
+      <section class="screen" data-index="5" aria-label="Vers 6">
+        <div class="s6-bg">
+          <div class="mirror-scene mirror-scene-him">
+            <div class="mirror-frame mirror-frame-left">
+              <div class="mirror-glass"></div>
+            </div>
+            <div class="figure figure-him">
+              <img src="assets/photo_ell.png" alt="" class="pixel-img figure-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="placeholder-asset placeholder-figure">[ell]</div>
+            </div>
+          </div>
+          <div class="sparkles-container" id="sparkles-him"></div>
+        </div>
+        <p class="verse" data-screen="5">i els valors brotaren<br>al cor que escoltava</p>
+      </section>
+
+      <!-- ── Screen 7 ── RAWR -->
+      <section class="screen" data-index="6" aria-label="Vers 7">
+        <div class="s7-bg">
+          <img src="assets/sticker_rawr.png" alt="" class="pixel-img rawr-sticker-img" id="rawr-sticker" onerror="this.style.display='none'">
+        </div>
+        <p class="verse verse-rawr" data-screen="6" id="rawr-text">RAWR</p>
+      </section>
+
+      <!-- ── Screen 8 ── gràcies per triar-me -->
+      <section class="screen" data-index="7" aria-label="Vers 8">
+        <div class="s8-bg">
+          <div class="balloons-container" id="balloons-container"></div>
+          <div class="final-message" id="final-message" aria-hidden="true">
+            <span class="final-heart">♥</span>
+          </div>
+        </div>
+        <p class="verse verse-final" data-screen="7">gràcies per triar-me</p>
+        <p class="balloon-hint" id="balloon-hint">toca els globus ♥</p>
+      </section>
+
+    </div><!-- /#track -->
+  </div><!-- /#viewport -->
+
+  <!-- swipe indicator (first visit) -->
+  <div class="swipe-hint" id="swipe-hint" aria-hidden="true">
+    <span class="swipe-arrow">→</span>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
