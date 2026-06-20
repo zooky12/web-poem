@@ -129,11 +129,8 @@ function initScreen2() { /* animations are CSS-driven */ }
    SCREEN 3 — eyes meet
 ════════════════════════════════════════ */
 function initScreen3() {
-  const left  = document.getElementById('sticker-eye-left');
-  const right = document.getElementById('sticker-eye-right');
-  /* stagger so they orbit in */
-  setTimeout(() => { left.classList.add('meet'); }, 100);
-  setTimeout(() => { right.classList.add('meet'); }, 220);
+  const s = document.getElementById('sticker-eye-single');
+  setTimeout(() => { s.classList.add('meet'); }, 150);
 }
 
 /* ════════════════════════════════════════
